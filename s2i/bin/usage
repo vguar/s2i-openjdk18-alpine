@@ -1,0 +1,12 @@
+#!/bin/bash -e
+cat <<EOF
+This is the openjdk18-sti S2I image:
+To use it, install S2I: https://github.com/openshift/source-to-image
+
+Sample invocation:
+
+s2i build <source code path/URL> openjdk18-sti <application image>
+
+You can then run the resulting image via:
+docker run <application image>
+EOF
