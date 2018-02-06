@@ -1,6 +1,6 @@
 #!/bin/bash -e
 #
-# S2I assemble script for the 'openjdk18-sti' image.
+# S2I assemble script for the 's2i-openjdk18-alpine' image.
 # The 'assemble' script builds your application source so that it is ready to run.
 #
 # For more information refer to the documentation:
@@ -20,8 +20,6 @@ if [ "$(ls /tmp/artifacts/ 2>/dev/null)" ]; then
 fi
 
 echo "---> Installing application source..."
-pwd
-ls -al /tmp/src
 cp -Rf /tmp/src/. ./
 
 echo "---> Building application from source..."
