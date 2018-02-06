@@ -6,6 +6,6 @@ services:
   - docker
 
 script:
-  - docker build -t s2i-openjdk18-alpine  .
+  - docker build -t vguar/s2i-openjdk18-alpine  .
   -  docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
   -  docker push vguar/s2i-openjdk18-alpine
