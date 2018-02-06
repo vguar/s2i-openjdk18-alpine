@@ -1,4 +1,4 @@
-FROM s2i-core-alpine
+FROM vguar/s2i-base-alpine
 
 ##### Maven installation
 ENV MAVEN_VERSION 3.5.2
