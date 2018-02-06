@@ -16,10 +16,10 @@ cp -Rf /tmp/src/. ./
 
 echo "---> Building Spring Boot application from source"
 MAVEN_ARGS=${MAVEN_ARGS:-"install"}
-echo "--> # MVN_ARGS = $MVN_ARGS"
+echo "--> # MVN_ARGS = $MAVEN_ARGS"
 if [ -f "mvnw" ]; then
-  ./mvnw $MVN_ARGS
+  ./mvnw $MAVEN_ARGS
 else
-  mvn $MVN_ARGS
+  mvn $MAVEN_ARGS
 fi
 
